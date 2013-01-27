@@ -10,3 +10,4 @@ badwitch2
 * stage serialization (uuid)
 * entity
 * networking
+* assets
