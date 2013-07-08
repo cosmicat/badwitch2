@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71A60FA9-56CB-4ED3-95B6-02E49477821D}</ProjectGuid>
+    <ProjectTypeGuids>{948B3504-5B70-4649-8FE4-BDE1FB46EC69};{4925A630-B079-445D-BCD4-3A9C94FE9307}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>fs_monogame_learning1</RootNamespace>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+    <AssemblyName>fs_monogame_learning1</AssemblyName>
+    <SuppressXamMacUpsell>True</SuppressXamMacUpsell>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <UseSGen>false</UseSGen>
+    <PlatformTarget>x86</PlatformTarget>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <ConsolePause>false</ConsolePause>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <CreatePackage>false</CreatePackage>
+    <CodeSigningKey>Mac Developer</CodeSigningKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <LinkMode>Full</LinkMode>
+    <UseSGen>false</UseSGen>
+    <Tailcalls>true</Tailcalls>
+    <PlatformTarget>x86</PlatformTarget>
+    <EnableCodeSigning>true</EnableCodeSigning>
+    <ConsolePause>false</ConsolePause>
+    <CodeSigningKey>Developer ID Application</CodeSigningKey>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <CreatePackage>true</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <LinkMode>Full</LinkMode>
+    <UseSGen>false</UseSGen>
+    <Tailcalls>true</Tailcalls>
+    <PlatformTarget>x86</PlatformTarget>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <EnableCodeSigning>true</EnableCodeSigning>
+    <ConsolePause>false</ConsolePause>
+    <CodeSigningKey>3rd Party Mac Developer Application</CodeSigningKey>
+    <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
+    <EnablePackageSigning>true</EnablePackageSigning>
+    <CreatePackage>true</CreatePackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="MonoMac" />
+    <Reference Include="MonoGame.Framework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Game1.fs" />
+    <Compile Include="Main.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets" />
+</Project>

@@ -1,0 +1,39 @@
+﻿<Properties MonoDevelop.MonoMac.LastXamMacNagTime="6/17/2013 8:03:31 PM">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="bw_learning_1/engine/Entity/EntityBase.cs">
+    <Files>
+      <File FileName="bw_learning_1/engine/SpatialPosition.cs" Line="1" Column="1" />
+      <File FileName="bw_learning_1/engine/Resources/ResourceBase.cs" Line="1" Column="1" />
+      <File FileName="bw_learning_1/engine/Resources/FileResource.cs" Line="1" Column="1" />
+      <File FileName="bw_learning_1/engine/Entity/EntityBase.cs" Line="8" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="bw_learning_1" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="engine" expanded="True">
+              <Node name="Entity" expanded="True">
+                <Node name="EntityBase.cs" selected="True" />
+              </Node>
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
